@@ -4,4 +4,4 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 import java.net.URI
 
 @ConfigurationProperties(prefix = "polar")
-data class ClientProperties(val catalogServiceURI: URI)
+data class ClientProperties(val catalogServiceUri: URI)

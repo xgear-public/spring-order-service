@@ -10,7 +10,7 @@ class ClientConfig {
     @Bean
     fun webClient(clientProperties: ClientProperties, webClientBuilder: WebClient.Builder): WebClient {
         return webClientBuilder
-            .baseUrl(clientProperties.catalogServiceURI.toString())
+            .baseUrl(clientProperties.catalogServiceUri.toString())
             .build()
     }
 }
